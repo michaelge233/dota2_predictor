@@ -38,7 +38,7 @@ Save your friends' and your steam ids in our_ids.txt like:
 
 **3.Images**
 
-Run ./hero_imaged/get_images.py to download images. 
+Run get_images.py to download images. 
 
 **4.Get data**
 
@@ -49,4 +49,4 @@ Run gui.py after completing the previous steps.
 
 To update your data, you can just run get_matches.py again. 
 
-If dota2 has an update involving a new heroes, run get_id_name.py and ./hero_imaged/get_images.py again.
+If dota2 has an update involving new heroes, run get_id_name.py and get_images.py again.
