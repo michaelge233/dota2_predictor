@@ -51,14 +51,21 @@ def choose_hero(hi):
 
 i=0
 for hero_id in id_name_dic:
+
     filename='.\\hero_images\\'+hero_id+" "+id_name_dic[hero_id]+".png"
-    imgBtn = PhotoImage(file=filename)
-    imgs.append(imgBtn)
-    buttons[hero_id]=Button(win,image=imgBtn,bg="white",command=lambda hi=hero_id:choose_hero(hi))
-    buttons[hero_id].grid(row=i//16,column=i%16)
+    try:
+        imgBtn = PhotoImage(file=filename)
+        imgs.append(imgBtn)
+        buttons[hero_id]=Button(win,image=imgBtn,bg="white",command=lambda hi=hero_id:choose_hero(hi))
+        buttons[hero_id].grid(row=i//16,column=i%16)
+    except:
+        buttons[hero_id]=Button(win,text=id_name_dic[hero_id],bg="white",command=lambda hi=hero_id:choose_hero(hi))
+        buttons[hero_id].grid(row=i//16,column=i%16)
     i=i+1
 
 def f1():
+    if choose_num!=10:
+        return
     text0.config(state=NORMAL)
     rx=np.zeros(hero_num*2,dtype = np.bool_)
     for i in range(0,5):
