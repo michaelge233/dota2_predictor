@@ -1,5 +1,5 @@
 # Dota2 Predictor
-Dota2 Predictor is a program based on mechine learning to predict results of Data2 matches. It can automatically obtain the game data of designated players, and predict the results of their future games according to the heroes selected in these games.
+Dota2 Predictor is a program based on mechine learning to predict results of Data2 matches. It can automatically obtain the game data of designated players, and predict the results of their future games according to the heroes selected in these games. You can follow the instructions below to install the client or experience [the web verion](http://cccpcccai.top/).
 ## 1. Install
 ### 1.1 Download
 Requirement:
@@ -23,7 +23,7 @@ or download the [zip file.](https://github.com/ccpcc/dota2_predictor/archive/mas
 
 **1.2.1 Api key**
 
-dota2_predictor get data via dota2api, so a steam api key is needed. If you haven't got one, get it from https://steamcommunity.com/dev/apikey (can't visit in Chinese mainland)
+Dota2 Predictor get data via dota2api, so a steam api key is needed. If you haven't got one, get it from https://steamcommunity.com/dev/apikey (can't visit in Chinese mainland)
 
 Then paste your api key in steam_api_key.txt
 
